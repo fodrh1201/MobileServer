@@ -26,4 +26,12 @@ public class Reactor {
 	public void registerHandler(EventHandler handler) {
 		map.put(handler.getHandler(), handler);
 	}
+	
+	public void registerHandler(String header, EventHandler handler) {
+		map.put(header, handler);
+	}
+	
+	public void removeHandler(EventHandler handler) {
+		map.remove(handler.getHandler());
+	}
 }

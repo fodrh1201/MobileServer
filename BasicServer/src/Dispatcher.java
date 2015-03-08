@@ -28,6 +28,8 @@ public class Dispatcher {
 			
 			EventHandler handler = map.get(header);
 			handler.handleEvent(inputStream);
+			
+			socket.close();
 //			
 //			switch (header) {
 //			case "0x5001":
