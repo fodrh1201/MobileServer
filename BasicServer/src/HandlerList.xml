@@ -2,8 +2,8 @@
 <serverList>
 
 	<server name="server1">
-		<handler header="0x5001">StreamSayHelloHandler</handler>
-		<handler header="0x6001">StreamUpdateProfileHandler</handler>
+		<handler header="0x5001">reactor.StreamSayHelloHandler</handler>
+		<handler header="0x6001">reactor.StreamUpdateProfileHandler</handler>
 	</server>
 	<server name="server2">
 		<handler header="0x5001">StreamSayHelloHandler</handler>
